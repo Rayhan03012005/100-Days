@@ -1,0 +1,18 @@
+public class Main {
+    
+    public static void main(String[] args) {
+        System.out.println("nama: Rayhan Demas Fernanda");
+        
+System.out.println("Nim: D023527");
+        
+        System.out.println("Kelas: Informatika B");
+        
+        System.out.println("Alamat: Majene");
+        
+        
+        
+        
+        
+    }
+    
+}
