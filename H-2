@@ -1,0 +1,20 @@
+public class Main {
+    
+    public static void main(String[] args) {
+        String nama ;
+        byte umur;
+        double tinggi_badan ;
+        boolean laki_laki = true;
+            
+        nama ="Rayhan Demas Fernanda";
+        umur = (18);
+        tinggi_badan = 163.0;
+        
+         System.out.println("nama:"+ nama);
+        System.out.println("umur:"+ umur);
+         System.out.println("tinggi_badan:" + tinggi_badan );
+         System.out.println("laki laki:"+ laki_laki);
+        
+    }
+    
+}
