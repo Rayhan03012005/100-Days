@@ -1,0 +1,36 @@
+public class H4{
+    public static void main(String[] args) {
+        
+        String nama,nim,kelas;
+        nama= ("Rayhan Demas Fernanda");
+        nim = ("D023526");
+        kelas = ("Informatika B");
+        System.out.println("nama : "+ nama);
+        System.out.println("nim : " + nim);
+        System.out.println("kelas : "+ kelas);
+        
+        
+        System.out.println("--------Aritmatika Sederhana--------");
+        //penjumlahan
+        int angka1 = 5;
+        int angka2 = 3;
+        int hasilPenjumlahan = angka1 + angka2;
+        System.out.println("Hasil penjumlahan: " + hasilPenjumlahan);
+
+        // pengurangan
+        int hasilPengurangan = angka1 - angka2;
+        System.out.println("Hasil pengurangan: " + hasilPengurangan);
+
+        // perkalian
+        int hasilPerkalian = angka1 * angka2;
+        System.out.println("Hasil perkalian: " + hasilPerkalian);
+
+        // pembagian
+        double hasilPembagian = (double) angka1 / angka2;
+        System.out.println("Hasil pembagian: " + hasilPembagian);
+
+        // sisa bagi
+        int sisaBagi = angka1 % angka2;
+        System.out.println("Sisa bagi: " + sisaBagi);
+    }
+}
