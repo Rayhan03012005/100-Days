@@ -1,0 +1,25 @@
+package belajar;
+
+import java.util.Scanner;
+
+public class clas {
+    
+    public static void main(String[] args) {
+       /* membahas tentang secanner.*/
+        
+        Scanner input = new Scanner (System.in);
+        
+        
+        String nama,nim,jurusan;
+        
+        System.out.print("nama:");
+        nama = input.nextLine();
+        
+        System.out.print("nim:");
+        nim = input.nextLine();
+        
+        System.out.print("jurusan:");
+        jurusan = input.nextLine();
+    
+    }
+}
