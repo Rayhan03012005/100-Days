@@ -1,0 +1,28 @@
+
+public class Main {
+    
+    public static void main(String[] args) {
+        boolean laki_laki = true;
+  
+        
+        
+        System.out.println("-----Tipe data boolean-----");
+             // Tipe data boolean digunakan untuk menunjukan nilai true (benar) atau false (salah).
+        boolean ngoding_menyenangkan = true;
+        boolean ngoding_mudah = false;
+        
+        System.out.println("Apakah ngoding menyenangkan? " + ngoding_menyenangkan );
+        System.out.println("Apakah ngoding mudah? " + ngoding_mudah);
+        
+        // kita bisa menggunakan operator logika yaitu AND,OR,& NOT.
+        boolean AND = ngoding_menyenangkan && ngoding_mudah; // && (AND) logika
+        boolean OR = ngoding_menyenangkan || ngoding_mudah;   // || (OR) logika
+        boolean NOT = !ngoding_mudah;   // ! (NOT) logika
+        
+        System.out.println("Hasil AND logika: " + AND);
+        System.out.println("Hasil OR logika: " + OR);
+        System.out.println("Hasil NOT logika: " + NOT);
+    
+    }
+    
+} 
