@@ -1,0 +1,16 @@
+public class Main {
+    
+    public static void main(String[] args) {
+        // percabangan. 
+        int angka1 = 20;
+        int angka2 = 10;
+
+        if (angka1 > angka2) {
+            System.out.println("Angka 1 lebih besar dari Angka 2");
+        } else if (angka1 < angka2) {
+            System.out.println("Angka 1 lebih kecil dari Angka 2");
+        } else {
+            System.out.println("Angka 1 sama dengan Angka 2");
+        }
+    }
+}
