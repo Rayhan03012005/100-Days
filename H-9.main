@@ -1,0 +1,23 @@
+package belajar;
+import java.util.Scanner;
+public class clas {
+    public static void main(String[] args) {
+        
+       /* membahas tentang gabungan dari secanner boolean & percabangan.*/
+      Scanner input = new Scanner (System.in);
+        
+        boolean kelamin;
+        
+        System.out.print("jenis kelamin (true & false) :");
+        kelamin = input.nextBoolean();
+       
+        
+       if (kelamin){
+        System.out.println("anda bukan perempuan");
+       }else {
+           System.out.println("anda perempuan");}
+        
+        
+        
+    }
+}
