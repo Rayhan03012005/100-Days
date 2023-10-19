@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class H11 {
+    
+    public static void main(String[] args) {
+     //gabungan Scanner dengan tipe data Double.
+        Scanner input = new Scanner(System.in);
+// double adalah tipe data yang dapat menyimpan angka diblakang koma lebih banyak dari pada float.
+        System.out.print("Masukkan angka pertama: ");
+        double angka1 = input.nextDouble();
+//contoh = 5.13467
+        System.out.print("Masukkan angka kedua: ");
+        double angka2 = input.nextDouble();
+
+        if (angka1 > angka2) {
+            System.out.println(angka1 + " lebih besar dari : " + angka2);
+        } else if (angka1 < angka2) {
+            System.out.println(angka2 + " lebih besar dari : " + angka1);
+        } else {
+            System.out.println( "keduannya memiliki nilai yang sama :" + angka1);
+        }
+    }
+}
