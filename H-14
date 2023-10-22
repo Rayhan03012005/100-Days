@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class H14 {
+    
+    public static void main(String[] args) {
+        System.out.println("menghitung luas persegi");
+        
+           Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Masukkan panjang sisi persegi: ");
+        double sisi = scanner.nextDouble();
+        double luas = sisi * sisi ;
+        
+        System.out.println("Luas persegi: " + luas);
+    }
+}
