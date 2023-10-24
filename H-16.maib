@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class H16 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("MASUKAN NILAI");
+        System.out.print("asep: ");
+        int a = scanner.nextInt();
+
+        if (a >= 85 && a <= 100) {
+            System.out.println("memiliki nilai A ");
+            
+        } else if ( a >= 75 && a< 85 ) {
+            System.out.println("memiliki nilai B");
+        
+        } else if ( a >= 65 && a < 75) {
+            System.out.println("memiliki nilai C");
+    }else if (a < 65) {
+        System.out.println("memiliki nilai EROR");
+    }else {
+        System.out.println("nilai melebihi batas");
+    }
+        
+    }
+}
