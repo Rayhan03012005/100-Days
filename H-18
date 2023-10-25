@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class H18 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("masukan day (1/7) :");
+    int day = input.nextInt();
+        if (day == 1 ){
+            switch (day){
+                case 1 :
+            System.out.print("matematika");
+                break;
+            case 2 :
+            System.out.print("bahasa indonesia");
+                break;
+                case 3:
+        System.out.print("Fisika");
+                break;
+                case 4 :
+        System.out.print("pancasila");
+                break;
+                case 5 :
+        System.out.print("kewarganegaraan");
+                break;
+            }
+        }else{
+      System.out.print("libur");
+            
+            
+    }
+       }
+    }
