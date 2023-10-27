@@ -1,0 +1,88 @@
+import java.util.Scanner;
+public class H19 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("DAFTAR MENU");
+        System.out.println("1 bakso\n2 soto\n3 sate\n4 nasi kuning\n5 nasi goreng");
+        System.out.print("PILIH MENU(1/5) :");
+       
+        
+    int hari= input.nextInt();
+        
+        if (hari>= 1 && hari <= 5 ){
+           switch (hari){
+                case 1 :
+                System.out.println("anda memilih bakso");
+                System.out.println("beberapa hal tentang menu bakso \n1 harga \n2 komposisi");
+                System.out.print("ketik sesuai nomor (1/2) :");
+                  int bakso= input.nextInt();
+                    switch (bakso){
+                       case 1 :
+                       System.out.println("harga bakso :12.000.00");
+                       break;
+                       case 2 :
+                       System.out.println("1 daging\n2 mie\n3 bawang merah");
+                }
+                break;
+                case 2 :
+                System.out.println("anda memilih soto");
+                System.out.println("beberapa hal tentang menu di soto \n1 harga \n2 komposisi");
+                System.out.print(" ketik sesuai nomor (1/2) :");
+                int soto= input.nextInt();
+                    switch (soto){
+                        case 1:
+                        System.out.println("25.000.00");
+                        break;
+                        case 2:
+                        System.out.println("1 daging\n2 hati");
+                    }
+                break;
+                case 3:
+                System.out.println("anda memilih sate");
+                System.out.println("beberapa hal tentang menu di sate\n1 harga \n2 komposisi");
+                System.out.print(" ketik sesuai nomor (1/2) :");
+                int sate = input.nextInt();
+                    switch (sate){
+                        case 1:
+                        System.out.println("25.000.00");
+                        break;
+                        case 2:
+                        System.out.println("1 daging\n2 bumbu kacang\n3 lontong");
+                    }    
+                break;
+                case 4 :
+                System.out.println("anda memilih nasi kuning");
+                System.out.println("beberapa hal tentang menu di nasi kuning\n1 harga \n2 komposisi");
+                System.out.print(" ketik sesuai nomor (1/2) :");
+                int nasikuning= input.nextInt();
+                    switch (nasikuning){
+                        case 1:
+                        System.out.println("10.000.00");
+                        break;
+                        case 2:
+                        System.out.println("1 nasi\n2 ikan\n3 telur");
+                   }     
+                break;
+                case 5 :
+                System.out.println("anda memilih nasi goreng");
+                System.out.println("beberapa hal tentang menu di nasi goreng \n1 harga \n2 komposisi");
+                System.out.print(" ketik sesuai nomor (1/2) :");
+                int nasigoreng= input.nextInt();
+                    switch (nasigoreng){
+                        case 1:
+                        System.out.println("25.000.00");
+                        break;
+                        case 2:
+                        System.out.println("1 daging\n2 hati");
+                        break;
+                    }
+           }
+            
+        }else{
+                System.out.println("menu tidak ada");
+            {
+            }
+            }
+                
+        }
+    }
