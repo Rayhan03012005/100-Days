@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class H20 {
+    public static void main(String[] args) {
+        System.out.println("==========konversi bilangan desimal to biner==========");
+        int angka,i=0;
+        int binary []= new int[100];
+        Scanner input= new Scanner (System.in);
+        System.out.print("masukan bilangan desimal :");
+        angka= input.nextInt();
+        
+        while(angka!=0)
+        {
+            binary [i]=angka%2;
+            angka=angka/2;
+            i++;
+        }
+        System.out.print("hasil konversi ke bilangan biner :");
+        for(int A=i-1;A>=0;A--)
+        {
+            System.out.print(""+binary[A]);
+        }
+    }
+    
+}
