@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class H21 {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+          System.out.print("Masukkan Nim Mahasiswa : ");
+            String nim = input.nextLine();
+        double Presentasi,Tugas,UAS,nilai;
+        System.out.print("Masukkan Nama Mahasiswa :");
+        String nama = input.nextLine();
+        
+        System.out.print("Masukan mata kuliah :");
+        String matkul = input.nextLine();
+
+        System.out.print("Masukkan Nilai Presentasi (angka) :");
+        Presentasi = input.nextDouble();
+
+        System.out.print("Masukkan Nilai Tugas (angka) :");
+        Tugas = input.nextDouble();
+
+        System.out.print("Masukkan Nilai UAS (angka) :");
+        UAS = input.nextDouble();
+
+        nilai = (0.3 * Presentasi) + (0.3 * Tugas) + (0.4 * UAS);
+        System.out.println("================================");
+          System.out.println("NILAI RATA-RATA : " + nilai);
+    }
+}
+        
