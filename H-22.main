@@ -1,0 +1,30 @@
+import java.util.Random;
+import java.util.Scanner;
+public class H22 {
+    
+    public static void main(String[] args) {
+        //membuat mini game batu gunting kertas
+        String[] pilihan = {"batu","Gunting","kertas"};
+
+        Scanner input= new Scanner(System.in);
+        Random random= new Random();
+
+        System.out.println("anda akan memainkan game Batu-Gunting-Kertas!");
+        System.out.println("Pilih: 0 (Batu), 1 (Gunting), 2 (Kertas)");
+        System.out.print("masukan pilihan (0/1/2) :");
+        
+        int anda= input.nextInt();
+        int computer= random.nextInt(3);
+
+        System.out.println("Anda memilih: " + pilihan [anda]);
+        System.out.println("Komputer memilih: " + pilihan [computer]);
+
+        if (anda == computer) {
+            System.out.println("Hasil: Seri!");
+        } else if ((anda == 0 && computer == 1) || (anda == 1 && computer == 2) || (anda == 2 && computer == 0)) {
+            System.out.println("Hasil: Anda Menang!");
+        } else {
+            System.out.println("Hasil: Komputer Menang! \ndan anda kalah");
+        }
+    }
+}
