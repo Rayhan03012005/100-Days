@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class H25 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        //mencari berat badan ideal dan mengkategorikannya.
+        System.out.print("Masukkan berat badan (kg): ");
+        double beratBadan = input.nextDouble();
+
+        System.out.print("Masukkan tinggi (m): ");
+        double tinggi = input.nextDouble();
+        double A = beratBadan / (tinggi * tinggi);
+        System.out.println("Indeks Massa Tubuh Anda adalah: " + A);
+
+        if (A < 18.5) {
+            System.out.println("Anda termasuk dalam kategori Kurus.");
+        } else if (A >= 18.5 && A < 24.9) {
+            System.out.println("Anda termasuk dalam kategori Normal.");
+        } else if (A >= 24.9 && A < 29.9) {
+            System.out.println("Anda termasuk dalam kategori Gemuk.");
+        } else {
+            System.out.println("Anda termasuk dalam kategori Obesitas.");
+        }
+    }
+}
