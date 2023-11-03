@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class H26 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // mengonversi dolar Amerika (USD) oe Rupiah (IDR) 
+        
+           System.out.print("Masukkan jumlah uang dalam USD: ");
+           double usd = scanner.nextDouble();
+           int B = 1;
+           double A = 15000.0; 
+        
+           double idr = usd * A;
+        
+           System.out.println("Jumlah uang dalam Rupiah: " + idr + " IDR"); 
+    }
+}// maaf singkat
