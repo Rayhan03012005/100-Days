@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class H27{
+    public static void main(String[] args) {
+        // Menkomversi suhu
+        Scanner input = new Scanner(System.in);
+        System.out.println("Menu Konversi Suhu:");
+        System.out.println("1. Celsius ke Fahrenheit");
+        System.out.println("2. Celsius ke Kelvin");
+        System.out.println("3. Celsius ke Reamur");
+        System.out.print("Pilih (1/2/3): ");
+        
+        int menu = input.nextInt();
+        System.out.print("Masukkan suhu dalam Celsius: ");
+        int celsius = input.nextInt();
+        double H = 0.0;
+        
+        switch (menu) {
+            case 1:
+                H = (celsius * 9/5.0) + 32;
+                System.out.printf("%d Celsius = %.2f Fahrenheit\n", celsius, H);
+                break;
+            case 2:
+                H = celsius + 273.15;
+                System.out.printf("%d Celsius = %.2f Kelvin\n", celsius, H);
+                break;
+            case 3:
+                H = celsius * 4/5.0;
+                System.out.printf("%d Celsius = %.2f Reamur\n", celsius, H);
+                break;
+            default:
+                System.out.println("Pilihan tidak valid. Silakan pilih 1, 2, atau 3.");
+        }
+        input.close();
+    }
+}
