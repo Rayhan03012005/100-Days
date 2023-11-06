@@ -1,0 +1,19 @@
+public class H29 {
+    public static void main(String[] args) {
+        // memplajari lebih lanjut yentang array
+        int[] angka = {64, 34, 25, 12, 22, 11, 90};
+            for (int i = 0; i < angka.length - 1; i++) {
+            for (int j = 0; j < angka.length - i - 1; j++) {
+                if (angka[j] > angka[j + 1]) {
+                    int temp = angka[j];
+                    angka[j] = angka[j + 1];
+                    angka[j + 1] = temp;
+                }
+                }  // mengurutkan array!
+                }
+        System.out.println("urutan array:");
+            for (int num : angka) {
+                System.out.print(num + " ");
+        }   
+    }
+}
