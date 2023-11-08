@@ -1,0 +1,25 @@
+public class H31 {
+    public static void main(String[] args) {
+        System.out.println("mencari nilai rata rata dan nilai minimum maksimum.");
+        int[] angka = {12, 45, 78, 90, 34};
+        int minimum = angka[0];
+        int maksimum = angka[0];
+        int total = 0;
+        for (int i = 1; i < angka.length; i++) {
+            if (angka[i] < minimum) {
+                minimum = angka[i];
+            }
+            if (angka[i] > maksimum) {
+                maksimum = angka[i];
+            }
+        }
+        for (int i = 0; i < angka.length; i++) {
+            total += angka[i];
+        }
+
+        double rataRata = (double) total / angka.length;
+        System.out.println("Rata-rata: " + rataRata);
+        System.out.println("Nilai Minimum: " + minimum);
+        System.out.println("Nilai Maksimum: " + maksimum);
+    }
+}
