@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class H32 {
+    public static void main(String[] args) {
+        System.out.println("JADWAL MATA KULIAH SAYA");
+        Scanner input = new Scanner(System.in);
+
+        String[] hari = {"Senin", "Selasa", "Rabu", "Kamis", "Jumat"};
+        String[] makul = {"Matematika dan Fisika","Agama dan Pendidikan pancasila","DDP dan PSTI","Pendidikan Kewarganegaraan","Bahasa indonesia"};
+        String[] jamMasuk = {"08:00 untuk MTK\n09:20 untuk Fisika", "07:30 untuk agama\n09:00 untuk Pendidikan pancasila", "07:20 untuk DDP\n 09:10 untuk PSTI", "13:00 untuk Pendidikan Kewarganegaraan", "08:20 untuk Bahasa indonesia"};
+
+        System.out.println("Daftar Hari:");
+        for (String jadwal : hari) {
+            System.out.println(jadwal);
+        }
+System.out.println("Sabtu libur\n Minggu libur");
+        System.out.println("=================Melihat Jadwal Makul=================");
+        System.out.print("Masukkan nama hari: ");
+        String pilihanHari = input.nextLine();
+        boolean hariDitemukan = false;
+
+        for (int i = 0; i < hari.length; i++) {
+            if (hari[i].equalsIgnoreCase(pilihanHari)) {
+                hariDitemukan = true;
+                System.out.println("Jadwal makul pada " + hari[i] + ":");
+                System.out.println("Mata Kuliah: " + makul[i]);
+                System.out.println("Jam Masuk: \n" + jamMasuk[i]);
+                break;
+            }
+        }
+
+        if (!hariDitemukan) {
+            System.out.println("Hari " + pilihanHari + " tidak ditemukan.");
+        }
+    }
+}
