@@ -1,0 +1,35 @@
+import java.util.Arrays;
+import java.util.Random;
+public class H34 {
+    public static void main(String[] args) {
+        
+        int jmlArray = 10;
+        // Membuat array random
+        int[] A= new int[jmlArray];
+        Random random = new Random();
+
+        for (int i = 0; i < jmlArray; i++) {
+            A[i] = random.nextInt(100);
+        }
+        System.out.println("Array yang dihasilkan: \n" + Arrays.toString(A));
+        
+        int terbesar = A[0];
+        int terkecil = A[0];
+        int total = A[0];
+
+        for (int i = 1; i < jmlArray; i++) {
+            total += A[i];
+            if (A[i] > terbesar) {
+                terbesar = A[i];
+            }
+            if (A[i] < terkecil) {
+                terkecil = A[i];
+            }
+        }
+        double rataRata = (double) total / jmlArray;
+        // Menampilkan hasil
+        System.out.println("Angka terbesar: " + terbesar);
+        System.out.println("Angka terkecil: " + terkecil);
+        System.out.println("Rata-rata: " + rataRata);
+    }
+}
