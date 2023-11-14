@@ -1,0 +1,19 @@
+public class H37 {    
+    public static void main(String[] args) {
+        System.out.println("ARRAY DUA DIMENSI");
+        
+            int[][] matrix = {
+            {1, 2, 3, 4},
+            {5, 6, 7, 8},
+            {9, 10, 11, 12}
+        };
+        System.out.println("Nilai pada baris 3, kolom 2 : " + matrix[2][1]);
+
+        System.out.println("menampilkan semua array");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+        }
+    }
+}
