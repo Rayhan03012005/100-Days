@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class H39 {
+    public static void main(String[] args) {
+        System.out.println("jan banyak² ngisi jumlah mahasiswa ntar repot ");
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumlahMahasiswa = scanner.nextInt();
+
+        System.out.print("Masukkan jumlah mata kuliah: ");
+        int jumlahMataKuliah = scanner.nextInt();
+        
+        double[][] nilaiMahasiswa = new double[jumlahMahasiswa][jumlahMataKuliah];
+            
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.println("Masukkan nilai mahasiswa " + (i + 1) + ":");
+            for (int j = 0; j < jumlahMataKuliah; j++) {
+                System.out.print("Nilai Mata Kuliah " + (j + 1) + ": ");
+                nilaiMahasiswa[i][j] = scanner.nextDouble();
+            }
+        }
+        System.out.println("\nNilai Mahasiswa:");
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.print("Mahasiswa " + (i + 1) + ": ");
+            for (int j = 0; j < jumlahMataKuliah; j++) {
+                System.out.print(nilaiMahasiswa[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
