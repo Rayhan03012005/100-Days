@@ -1,0 +1,18 @@
+
+public class H40 {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        int[][][] angka= new int[3][4][5];
+        
+        for (int i = 0; i < angka.length; i++) {
+            for (int j = 0; j < angka[i].length; j++) {
+                for (int k = 0; k < angka[i][j].length; k++) {
+                    angka[i][j][k] = i + j + k;
+                    System.out.print(angka[i][j][k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+}
