@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class H45 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("pola : \n1.Segitiga \n2.Persegi \n3.jajar genjang \n ");
+        System.out.print("Masukan pilihan (1/2/3) : ");
+        int pilihan = input.nextInt();
+        switch (pilihan){
+            case 1:
+        System.out.print("Masukkan tinggi segitiga: ");
+        int tinggi = input.nextInt();
+
+        for (int i = 1; i <= tinggi; i++) {
+            
+            for (int j = 1; j <= tinggi - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+            System.out.println("\n");
+        }
+            break;
+            case 2: 
+            System.out.print("Masukan besar persegi sama sisi : ");
+            int sisi = input.nextInt();
+            for (int i = 1; i <= sisi; i++ ){
+                for(int j =1;j<=sisi;j++){
+                    System.out.print("* ");
+                }
+                System.out.print("\n");
+            }
+        break;
+        case 3 :
+            System.out.print("Masukan sisi jajar genjang : ");
+            int sisi1 = input.nextInt();
+            for(int i=0; i<sisi1; i++){
+                for (int j=0; j<sisi1-i-1;j++){
+                    System.out.print("  ");
+                }
+                    for (int k=0;k<sisi1;k++){
+                        System.out.print("* ");
+                    }
+                System.out.print("\n");
+            }
+            break;
+    }
+        
+    }
+}
