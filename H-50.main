@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.util.Random;
+public class H50 {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        Random random = new Random();
+            //menampilkan pola dengan huruf" random.
+            System.out.print("masukan tinggi dan panjang pola :");
+        int tinggi = input.nextInt();
+
+        for (int i = 1; i <= tinggi; i++) {
+            for (int j = 1; j <= i; j++) {
+                char karakterAcak = (char) (random.nextInt(26) + 'A');
+                System.out.print(karakterAcak + " ");
+            }
+            System.out.println();
+        }
+    }
+}
