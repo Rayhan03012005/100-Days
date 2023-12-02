@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class H55 {
+    public static void main(String[] args) {
+        Scanner input =new Scanner (System.in);
+        System.out.println("!tolong masukan batas angka hanya dengan angka ganjil!");
+        System.out.print("masukan batas bilangan:");
+        int batas = input.nextInt();
+        if (batas%2==1){
+            System.out.println("menampilkan bilangan ganjil dari 1 sampai "+batas+" :");
+        for(int i=1; i<=batas; i+=2){
+            System.out.print(i+" ");
+        }
+        }else{
+            System.out.print("angka anda genap!!!...");
+        }
+    }
+    
+}
