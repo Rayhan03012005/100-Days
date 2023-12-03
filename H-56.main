@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class H56 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int r1 = 0;
+        int r2 = 1;
+        System.out.print("masukkan angka = ");
+        int r = input.nextInt();
+        System.out.println("~~~~~~~~~~~~~~");
+        int rn;
+        System.out.println("urutan fibonacci");
+        System.out.println("~~~~~~~~~~~~~~~");
+        System.out.print(r1+" ");
+        System.out.print(r2);
+        for(int a = 1; a<r;a++){
+           rn = r1 + r2;
+            System.out.println(r2+" + "+r1+" = "+rn);
+            r1 = r2;
+            r2 = rn;
+        }
+        System.out.print("");
+    }
+}
