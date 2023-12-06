@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class H59{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan jari-jari lingkaran: ");
+        double jariJari = scanner.nextDouble();
+
+        double diameter = hitungDiameter(jariJari);
+
+        System.out.println("Diameter lingkaran dengan jari-jari " + jariJari + " adalah " + diameter);
+    }
+    static double hitungDiameter(double jariJari) {
+        return 2 * jariJari;
+    }
+}
