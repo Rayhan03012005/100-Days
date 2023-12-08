@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class H61 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        double[] nilai = new double[2];
+            
+        System.out.print("Masukkan nilai pertama: ");
+        nilai[0] = scanner.nextDouble();
+        
+        System.out.print("Masukkan nilai kedua: ");
+        nilai[1] = scanner.nextDouble();
+        
+        double penjumlahan = nilai[0] + nilai[1];
+        System.out.println("Penjumlahan: " + penjumlahan);
+        
+        double perkalian = nilai[0] * nilai[1];
+        System.out.println("Perkalian: " + perkalian);
+        
+        scanner.close();
+    }
+}
