@@ -1,0 +1,21 @@
+public class H65{
+    public static void main(String[] args) {
+        
+        String[][] biodata = {
+                {"Nama", "Rayhan"},
+                {"Tempat/Tanggal Lahir", "Makassar-3-january-2005"},
+                {"Alamat", "Rangas"},
+                {"Pendidikan Terakhir", "SMK "},
+                {"Pekerjaan", "Makan "},
+                {"Hobi", "Tidur"}
+        };
+        tampilkanBiodata(biodata);
+    }
+
+    private static void tampilkanBiodata(String[][] biodata) {
+        System.out.println("Bio Data:");
+        for (String[] bio : biodata) {
+            System.out.println(bio[0] + ": " + bio[1]);
+        }
+    }
+}
