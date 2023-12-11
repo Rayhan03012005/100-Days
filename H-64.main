@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class H64{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan jari-jari bola: ");
+        double jariJari = scanner.nextDouble();
+
+        double diameter = hitungDiameterBola(jariJari);
+
+        System.out.println("Diameter bola adalah: " + diameter);
+    }
+
+    public static double hitungDiameterBola(double jariJari) {
+        
+        return 2 * jariJari;
+    }
+}
