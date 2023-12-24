@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class clas {
+    public static void main(String[] args) {
+      Scanner input =new Scanner (System.in);
+        
+        System.out.print(" masuka angka ganjil :");
+        int angka= input.nextInt();
+        while(angka%2==0){
+            
+        System.out.println(" gemap");
+        System.out.print("masukan angka ganjil :");
+        angka = input.nextInt();
+            
+        }while(angka%2==1){
+            System.out.print("nice");
+        }
+    }
+}
