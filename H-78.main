@@ -1,0 +1,10 @@
+public class H78 {
+    public static void main(String[] args) {
+        // math.max
+       double a = 100;
+       double b = 99;
+       double h = Math.max(a, b);
+        System.out.print("hasil :");
+        System.out.println(h);
+    }
+}
