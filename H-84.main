@@ -1,0 +1,13 @@
+public class H84{
+
+  public static void main(String[] args) {
+  
+  long nilaix= 65000;
+  long nilaiz = 70000;
+  
+  long h = Math.addExact(nilaix, nilaiz);
+  System.out.println("hasil :");
+    System.out.println(+nilaix+" + "+nilaiz+" = "+h);
+   
+  }
+}
