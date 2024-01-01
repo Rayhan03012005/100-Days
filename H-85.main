@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class H85 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Prediksi Keuntungan Investasi");
+        System.out.print("Modal awal investasi: ");
+        int modalAwal = scanner.nextInt();
+        int modal = modalAwal;
+
+        System.out.print("Lama investasi (dalam tahun): ");
+        int lamaInvestasi = scanner.nextInt();
+
+        for (int i=1;i<= lamaInvestasi;i++) {
+            modal *= 1.05;
+            System.out.println("Tahun " +i+ " - Total keuntungan: " + modal);
+        }
+
+        System.out.println("Total keuntungan setelah " + lamaInvestasi + " tahun: " + (modal - modalAwal));
+    }
+}
