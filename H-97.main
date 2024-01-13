@@ -3,7 +3,6 @@ public class H96 {
     public static void main(String[] args) {
         TreeSet<String> A = new TreeSet<String>();
         
-        int i = 0;
         
         A.add("asep"); A.add("agus"); A.add("siti");
         
