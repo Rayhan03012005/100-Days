@@ -1,0 +1,16 @@
+import java.util.*;
+public class H96 {
+    public static void main(String[] args) {
+        TreeSet<String> A = new TreeSet<String>();
+        
+        int i = 0;
+        
+        A.add("asep"); A.add("agus"); A.add("siti");
+        
+        Iterator<String> iterator = A.iterator();
+        
+        while(iterator.hasNext()){
+            System.out.print(iterator.next()+" ");
+        }
+    }
+}
