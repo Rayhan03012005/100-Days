@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class H99 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        int kategori,jarak;
+        float harga=0;
+        String usia=null;
+        System.out.println("====Taksi Online====");
+        System.out.println(" ");
+        System.out.println("KATEGORI PENUMPANG :\n1. Anak-anak\n2. Dewasa\n3. Lansia");
+        System.out.print("Kategori(1-3): ");
+        kategori = input.nextInt();
+        System.out.print("Jarak (km)  : ");
+        jarak = input.nextInt();
+        if (jarak>0) {
+            switch (kategori) {
+                case 1:
+                    harga = jarak * 5000f;
+                    usia = " Anak-Anak ";
+                    break;
+                case 2:
+                    harga = jarak * 10000f;
+                    usia = " Dewasa ";
+                    break;
+                case 3:
+                    harga = jarak * 12000f;
+                    usia= " Lansia ";
+                    break;
+                default:
+                    System.out.println("Tidak Valid!!!");
+            }
+        }else{
+            System.out.println("Jarak Tidak Valid!!!");
+        }
+        System.out.println("Harga Tiket : ");
+        System.out.println("Kategori :"+usia);   
+        System.out.println("Jarak    : "+jarak+" Km");   
+        System.out.println("Harga    : Rp."+harga);  
+        
+    }    
+}
